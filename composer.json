@@ -1,0 +1,39 @@
+{
+	"name": "pavlinter/yii2-pav-app",
+	"description": "Yii 2 Pav Application Template (based on advanced)",
+	"keywords": ["yii2", "framework", "pav-app", "application template"],
+	"type": "project",
+	"license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Pavels Radajevs",
+            "email": "pavlinter@gmail.com"
+        }
+    ],
+	"support": {
+		"issues": "https://github.com/pavlinter/yii2-pav-app/issues",
+		"source": "https://github.com/pavlinter/yii2-pav-app"
+	},
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
