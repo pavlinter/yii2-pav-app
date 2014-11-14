@@ -21,9 +21,19 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+        'request' => [
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => '',
+            // unique CSRF cookie parameter for backend
+            'csrfParam' => '_backendCsrf',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+            'identityCookie' => [
+                'name' => '_backendUser', // unique for backend
+                'path' => '/backend' // set it to correct path for backend app.
+            ]
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
